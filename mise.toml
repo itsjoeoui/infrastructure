@@ -1,2 +1,11 @@
 [tools]
 terraform = "latest"
+
+[tasks.apply]
+run = "op run --env-file='.env' -- terraform apply"
+
+[tasks.plan]
+run = "op run --env-file='.env' -- terraform plan"
+
+[tasks.destroy]
+run = "op run --env-file='.env' -- terraform destroy"
